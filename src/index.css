@@ -170,6 +170,26 @@ header .presentation::before{
     transform: scale(1.1);
 }
 
+.fullItem{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000000cc;
+    z-index: 9999;
+    overflow: auto;
+}
+
+.fullItem > div{
+    width: 600px;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 9px;
+}
+
 main{
     display: flex;
     width: 100%;
@@ -186,28 +206,31 @@ main .item{
     padding-bottom: 20px;
 }
 
-main .item img{
+main .item img, .fullItem img{
     width: 100%;
     border-radius: 10px 10px 0 0;
     transition: transform 500ms ease;
+    cursor: pointer;
 }
 
-main .item img:hover{
+main .item img:hover, .fullItem img:hover{
     transform: scale(1.05);
 }
 
-main h2,
-main p, 
-main b{
+main h2, .fullItem h2,
+main p, .fullItem p,
+main b, .fullItem b {
     margin: 10px 20px;
     color: #333;
 }
 
-main b{
+main b,
+.fullItem b {
     color: #5fa36a;
 }
 
-main .addToCart{
+main .addToCart,
+.fullItem .addToCart{
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -223,7 +246,8 @@ main .addToCart{
     transition: transform 500ms ease;
 }
 
-main .addToCart:hover{
+main .addToCart:hover,
+.fullItem .addToCart:hover{
     transform: scale(1.5) translateY(-5px);
 }
 
