@@ -59,12 +59,41 @@ header .shopCart{
     top: 30px;
     right: 0;
     width: 450px;
-    min-height: 100px;
     background: #fafafa;
     -webkit-box-shadow: 10px 8px 7px 1px rgba(167,193,194,0.8);
     -moz-box-shadow: 10px 8px 7px 1px rgba(167,193,194,0.8);
     box-shadow: 10px 8px 7px 1px rgba(167,193,194,0.8);
     z-index: 1000;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+header .shopCart .item .empty h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+header .shopCart .item {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+header .shopCart .item img{
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+}
+
+header .shopCart .item h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+header .shopCart .item p {
+    color: #797979 ;
+    font-weight: 600;
 }
 
 header .presentation{
