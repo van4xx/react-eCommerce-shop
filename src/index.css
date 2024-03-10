@@ -70,6 +70,7 @@ header .shopCart{
 
 header .shopCart .item .empty h2{
     font-size: 20px;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -91,9 +92,31 @@ header .shopCart .item h2{
 
 }
 
-header .shopCart .item p {
+header .shopCart .item b {
     color: #797979 ;
     font-weight: 600;
+}
+
+header .shopCart .item .deleteIcon{
+    color: #ca5252;
+    float: right;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+}
+
+header .shopCart .item .deleteIcon:hover{
+    color: #dc3d3d;
+    transform: scale(1.5);
+}
+
+header .shopCart .sum {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 header .presentation{
